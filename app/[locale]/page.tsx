@@ -1,0 +1,1 @@
+import {Home} from '@/components/Home';import {getDictionary} from '@/components/Providers';import type {Locale} from '@/lib/types';export default async function Page({params}:{params:Promise<{locale:string}>}){const {locale}=await params;return <Home locale={locale as Locale} dict={getDictionary(locale as Locale)}/>}
