@@ -1,0 +1,1 @@
+import type {Locale} from '@/lib/types';import {SpaceClient} from '@/components/SpaceClient';export default async function Space({params}:{params:Promise<{locale:string}>}){const {locale}=await params;return <SpaceClient locale={locale as Locale}/>}
